@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ozone Awareness Quiz</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="quiz-container">
+      <div id="quiz-content">
+        <div class="question-container">
+          <div class="question" id="question-number">Question 1</div>
+          <div class="question" id="question-text"></div>
+        </div>
+        <div class="options-container" id="options-container"></div>
+        <div id="explanation" class="explanation" style="display: none;"></div>
+        <button class="action-btn" id="action-btn" onclick="handleAction()">Submit Answer</button>
+      </div>
+      <div id="result-container" class="result-container">
+        <div class="score-summary">
+          <h2>Quiz Completed!</h2>
+          <canvas id="scoreCanvas" width="200" height="200"></canvas>
+          <div id="score-marks"></div> <!-- updated from score-percent to score-marks -->
+          <p>You got <span id="correct-count"></span> out of <span id="total-questions"></span> questions correct!</p>
+          <div id="tips-section">
+            <h3>Here are some actionable tips based on your score:</h3>
+            <ul id="suggestions-list"></ul>
+          </div>
+        </div>
+        <button class="action-btn" onclick="restartQuiz()">Restart Quiz</button>
+        
+        <button class="action-btn" onclick="window.location.href='https://forms.gle/HS9dUzttJnf8HVzW6'">Give Us Your Insights</button>
+
+      </div>
+      
+      
+
+  <script src="app.js"></script>
+
+</body>
+</html>
